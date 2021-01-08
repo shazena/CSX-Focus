@@ -1,0 +1,13 @@
+{
+    "manifest_version" : 2,
+    "name" : "Focus",
+    "version" : "1.0",
+    "description" : "Extension to block you from choosing videos on Youtube's homepage to discourage distractions",
+    "content_scripts" : [
+        {
+             "matches" : [ "https://www.youtube.com/*"],
+             "js" : ["./main.js"]
+        }
+    ]
+
+}
